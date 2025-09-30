@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Mobil Donasi - ARUNISIA ROLEPLAY</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#00a8ff',
+                        'dark-bg': '#0e1a2b',
+                        'card-bg': '#172a46',
+                    },
+                    fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+                    boxShadow: { 'glow': '0 0 15px rgba(0, 168, 255, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { background-color: #0e1a2b; color: #e2e8f0; scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0e1a2b; }
+        ::-webkit-scrollbar-thumb { background: #00a8ff; border-radius: 10px; }
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .marquee-text { animation: marquee 30s linear infinite; }
+        .fade-in-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-sans">
+
+    <header class="bg-card-bg/50 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-primary/10">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-white tracking-wider">
+                Katalog <span class="text-primary">Donasi Server</span>
+            </h1>
+            <p class="text-slate-300 mt-1">ARUNISIA ROLEPLAY</p>
+        </div>
+        
+        <nav class="bg-card-bg/70 border-t border-b border-primary/20">
+            <div class="container mx-auto flex justify-center items-center space-x-6 md:space-x-10 text-sm md:text-base">
+                <a href="index.html" class="font-semibold text-primary border-b-2 border-primary py-3 px-2 transition-colors duration-300">
+                    Katalog Mobil
+                </a>
+                <a href="lainnya.html" class="font-semibold text-white hover:text-primary py-3 px-2 transition-colors duration-300">
+                    Donasi Lainnya
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-primary text-dark-bg overflow-hidden py-2 whitespace-nowrap">
+        <div class="marquee-text inline-block">
+            <span class="mx-8 font-semibold">SELAMAT DATANG DI KATALOG DONASI!</span>
+            <span class="mx-8">Setiap donasi sangat berarti untuk perkembangan server.</span>
+            <span class="mx-8">Hubungi admin di Discord untuk info lebih lanjut.</span>
+            <span class="mx-8">PROMO: Donasi mobil sport dapat bonus item in-game!</span>
+            <span class="mx-8 font-semibold">SELAMAT DATANG DI KATALOG DONASI!</span>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold text-center text-white mb-10 fade-in-up">Galeri Mobil Pilihan</h2>
+        <div id="car-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up">
+                <img src="https://cdn.discordapp.com/attachments/1362368426089254912/1362368428647780473/image2.png?ex=68dc5438&is=68db02b8&hm=1d5aa6193f903553cc6010d2f4af9b8f60c132e8c3d7ed558a268baa65f14fa4&" alt="P1" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">P1</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Supercar legendaris dengan kecepatan tinggi dan handling yang stabil. Cocok untuk balapan liar di kota.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="P1"
+                        data-image="https://cdn.discordapp.com/attachments/1362368426089254912/1362368429297766490/image.png?ex=68dc5439&is=68db02b9&hm=8ea604b8cec21c3b169522fb1e4aa74620bfe3709358143c2edb5ae9dcd2d4a0&"
+                        data-info="Untuk mendapatkan P1, silakan lakukan donasi sebesar Rp 350.000. Free Rata kanan. Hubungi admin dengan bukti transfer untuk klaim.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 100ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362373433328931017/1362373434469908620/image21.png?ex=68dc58e2&is=68db0762&hm=b2ae8ad6f9702abc5bcae5276f7826c14d7ca37d5eaf2d6d48aaa3bb75c7dcc5&" alt="EV 4" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">EV 4</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil Sangar yang mempunyai body besar dan performa tinggi.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="EV 4"
+                        data-image="https://cdn.discordapp.com/attachments/1362373433328931017/1362373433857409034/image22.png?ex=68dc58e2&is=68db0762&hm=3651a781bea082109c139706375b61defc3c70b5103feb6859db96033f34030f&"
+                        data-info="EV 4 tersedia dengan donasi Rp 350.000. Free Rata kanan. Hubungi admin untuk detail pembayaran.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 200ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362372841097396234/1362372842607345684/image40.png?ex=68dc5855&is=68db06d5&hm=a21cc438d7c4a6d25a6b5f794015356fb4e593e6710785791d252c605348f5d9&" alt="CVC TYPE R" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">CVC TYPE R</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Hypercar dengan desain agresif dan mesin yang menggelegar. Jadilah raja jalanan.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="CVC TYPE R"
+                        data-image="https://cdn.discordapp.com/attachments/1362372841097396234/1362372842121072680/image41.png?ex=68dc5855&is=68db06d5&hm=e2f54fc9c9f55017ffbd9ef89781d78c9d6964dad2280b5b1e58b175f6fae838&"
+                        data-info="Donasi spesial untuk CVC TYPE R adalah Rp 350.000. Free Rata kanan . Kontak admin untuk transaksi.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1418244141707427983/1418246187714216057/FiveM_b2944_GTAProcess_2025-04-17_14-17-30.png?ex=68dc9570&is=68db43f0&hm=5f2e27246fe63400e49dac6a2dff49f208b4631c4a7afb8200dcd2a8fb163b41&" alt="Mitsubishi Lancer Evo X" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">Mitsubishi Lancer Evo X</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil sedan sport yang lincah dan bertenaga. Sempurna untuk kegiatan roleplay maupun balapan.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="Mitsubishi Lancer Evo X"
+                        data-image="https://media.discordapp.net/attachments/1418244141707427983/1418246188595155064/FiveM_b2944_GTAProcess_2025-04-17_14-16-54.png?ex=68dc9571&is=68db43f1&hm=636293e8ef82c1cb643dcb20393c065d2e23cbe034da3385784f15a62ab64a7f&=&format=webp&quality=lossless&width=1500&height=844"
+                        data-info="Lancer Evo X bisa didapatkan dengan donasi Rp 350.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362368641471090868/1362368642255421470/image18.png?ex=68dc546b&is=68db02eb&hm=b212d1abcc7fcbd7fe4005bef60a1d8f188019446c8388ed5ab165a140b844c8&" alt="S15" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white"> S15</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil sedan sport yang lincah dan bertenaga. Sempurna untuk kegiatan roleplay maupun balapan.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="S15"
+                        data-image="https://cdn.discordapp.com/attachments/1362368641471090868/1362368642817331200/image17.png?ex=68dc546c&is=68db02ec&hm=de87468ea75d8e9da9ec70c1403620346454951c5e41ae61e0730d0d4b6604d7&"
+                        data-info="S15 bisa didapatkan dengan donasi Rp 350.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362372412947169340/1362372414641537324/image25.png?ex=68dc57ef&is=68db066f&hm=317d4432652bdfe5c2c61e52ceda0047f623db6095c680ee0bd858ab6fdc8b5b&" alt="STREET GLIDE" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white"> STREET GLIDE</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Motor gede yang gagah dan bertenaga. Sempurna untuk kegiatan touring dan geng motor.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="STREET GLIDE"
+                        data-image="https://cdn.discordapp.com/attachments/1362372412947169340/1362372416290160812/image23.png?ex=68dc57ef&is=68db066f&hm=054107f83b571269ef67d4b950c797ab4db2b7591578d94715f46f025be048f5&"
+                        data-info="Street Glide bisa didapatkan dengan donasi Rp 350.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362372649610641559/1362372650491707433/image15.png?ex=68dc5827&is=68db06a7&hm=18314d041cf9a14e1d94c0bae0f6b79f217971fb2efe0bb436269f527e4e4e79&" alt="Skyline" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white"> SKYLINE</h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil sport yang ikonik dengan performa tinggi. Cocok untuk balapan dan gaya hidup mewah.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="Skyline"
+                        data-image="https://cdn.discordapp.com/attachments/1362372649610641559/1362372651074588894/image14.png?ex=68dc5827&is=68db06a7&hm=c3be4260d0806333c0beb72eb0e8726a8ff12d9ab496a3ae17eacd31408cf0f2&"
+                        data-info="Skyline bisa didapatkan dengan donasi Rp 350.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362375145737420820/1362375146530275358/FiveM_b2944_GTAProcess_2025-04-17_15-16-09.png?ex=68dc5a7a&is=68db08fa&hm=1da147131fcf35560a78708372d636822a8980f1c883a959a1ff64a687599505&" alt="HR GR86" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white"> HR GR86 </h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil sport limited (0/5) yang ikonik dengan performa tinggi dan suara menggelegar. Cocok untuk balapan dan gaya hidup mewah.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="HR GR86"
+                        data-image="https://cdn.discordapp.com/attachments/1362375145737420820/1362375148451135539/FiveM_b2944_GTAProcess_2025-04-17_15-16-02.png?ex=68dc5a7b&is=68db08fb&hm=1c7970b1f7f4e7aeaec3b7843eea942b285076b3978ff832de4bc474a5dcbbac&"
+                        data-info="HR GR86 bisa didapatkan dengan donasi Rp 450.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362362619784200313/1362362620430127104/FiveM_b2944_GTAProcess_2025-04-17_14-32-03.png?ex=68dcf790&is=68dba610&hm=620965b7b82f44830349594d4cb77b43a5e7d783a0fa7eb9d5b2a2bc4827e920&" alt="PJR 4X4" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white"> PJR 4X4 </h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil sport limited (0/5) yang ikonik dengan performa tinggi dan suara menggelegar. Cocok untuk balapan dan gaya hidup mewah.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="PJR 4X4"
+                        data-image="https://media.discordapp.net/attachments/1362362619784200313/1362362621067792384/FiveM_b2944_GTAProcess_2025-04-17_14-32-23.png?ex=68dcf790&is=68dba610&hm=ae93da67a5b2e3dec929111c8e72e2166524b252e092fed9143573478d94fecc&=&format=webp&quality=lossless&width=1500&height=844"
+                        data-info="PJR 4X4 bisa didapatkan dengan donasi Rp 450.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362361938398412856/1362361939166232576/FiveM_b2944_GTAProcess_2025-04-17_14-38-55.png?ex=68dc4e2d&is=68dafcad&hm=e5d8cee4425816563151c398da515ba6d1e47ebeeb8bf7fc0587575d444a4b6c&" alt="VNT 4X4" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white"> VNT 4X4 </h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Mobil sport limited (0/5) yang ikonik dengan performa tinggi dan suara menggelegar. Cocok untuk balapan dan gaya hidup mewah.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="VNT 4X4"
+                        data-image="https://cdn.discordapp.com/attachments/1362361938398412856/1362361939853840384/FiveM_b2944_GTAProcess_2025-04-17_14-39-18.png?ex=68dc4e2d&is=68dafcad&hm=e24625a74ab6729e4cf40f4201ef338c5ed8be3c39bb5f93a3b1c5fd32c843c7&"
+                        data-info="VNT 4X4 bisa didapatkan dengan donasi Rp 450.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            <div class="car-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 300ms;">
+                <img src="https://cdn.discordapp.com/attachments/1362367930871971962/1362367933673640016/image69.png?ex=68dcfc82&is=68dbab02&hm=483d0b0d5bcf92ac168fb8afab917fcb9b9cd35c46b630cc921e40b484d78cee&" alt="VNT 4X4" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">  GS1200R </h3>
+                    <p class="text-slate-400 mt-2 text-sm h-16">Motor yang sporty dan bertenaga, cocok untuk pengendara yang menginginkan performa maksimal di setiap perjalanan.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="GS1200R"
+                        data-image="https://cdn.discordapp.com/attachments/1362367930871971962/1362367931706511510/image72.png?ex=68dcfc82&is=68dbab02&hm=08a8dc6385493ccc613110e413bece8aac1441354d0563e085baa995c96609a4&"
+                        data-info="GS1200R bisa didapatkan dengan donasi Rp 350.000. Silakan Open ticket yang tertera di Discord server dan kirim bukti ke admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="bg-card-bg mt-12 py-6">
+        <div class="container mx-auto text-center text-slate-400">
+            <p>&copy; 2025 ARUNISIA ROLEPLAY. Semua Hak Cipta Dilindungi.</p>
+            <p class="text-sm mt-1">Dibuat dengan ❤️ untuk komunitas.</p>
+        </div>
+    </footer>
+
+    <div id="donation-modal" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex justify-center items-center z-50 hidden transition-opacity duration-300">
+        <div id="modal-content" class="bg-card-bg rounded-lg shadow-glow max-w-lg w-full m-4 transform scale-95 transition-transform duration-300">
+            <div class="p-5 border-b border-slate-700 flex justify-between items-center">
+                <h2 id="modal-title" class="text-2xl font-bold text-primary">Detail Donasi</h2>
+                <button id="close-modal-btn" class="text-slate-400 hover:text-white text-2xl">&times;</button>
+            </div>
+            <div class="p-6">
+                <img id="modal-image" src="" alt="Gambar Donasi" class="w-full h-64 object-cover rounded-md mb-4">
+                <h3 id="modal-car-name" class="text-xl font-semibold text-white mb-2"></h3>
+                <p id="modal-info" class="text-slate-300"></p>
+                <a href="https://discord.gg/LINKDISCORDANDA" target="_blank" class="block w-full text-center mt-6 bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors">
+                    Hubungi Admin di Discord
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('donation-modal');
+            const modalContent = document.getElementById('modal-content');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const donationButtons = document.querySelectorAll('.donation-btn');
+            donationButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const itemName = button.dataset.name;
+                    const itemImage = button.dataset.image;
+                    const itemInfo = button.dataset.info;
+                    document.getElementById('modal-car-name').textContent = itemName;
+                    document.getElementById('modal-image').src = itemImage;
+                    document.getElementById('modal-info').textContent = itemInfo;
+                    modal.classList.remove('hidden');
+                    setTimeout(() => { modal.classList.add('opacity-100'); modalContent.classList.remove('scale-95'); modalContent.classList.add('scale-100'); }, 10);
+                });
+            });
+            const closeModal = () => {
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+                modal.classList.remove('opacity-100');
+                setTimeout(() => { modal.classList.add('hidden'); }, 300);
+            };
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (event) => { if (event.target === modal) { closeModal(); } });
+            const faders = document.querySelectorAll('.fade-in-up');
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+            }, { threshold: 0.2, rootMargin: "0px 0px -50px 0px" });
+            faders.forEach(fader => { appearOnScroll.observe(fader); });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi Lainnya - ARUNISIA ROLEPLAY</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'primary': '#00a8ff', 'dark-bg': '#0e1a2b', 'card-bg': '#172a46' },
+                    fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+                    boxShadow: { 'glow': '0 0 15px rgba(0, 168, 255, 0.4)' }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0e1a2b; color: #e2e8f0; scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0e1a2b; }
+        ::-webkit-scrollbar-thumb { background: #00a8ff; border-radius: 10px; }
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .marquee-text { animation: marquee 30s linear infinite; }
+        .fade-in-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-sans">
+
+    <header class="bg-card-bg/50 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-primary/10">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-white tracking-wider">Katalog <span class="text-primary">Donasi Server</span></h1>
+            <p class="text-slate-300 mt-1">ARUNISIA ROLEPLAY</p>
+        </div>
+        
+        <nav class="bg-card-bg/70 border-t border-b border-primary/20">
+            <div class="container mx-auto flex justify-center items-center space-x-6 md:space-x-10 text-sm md:text-base">
+                <a href="index.html" class="font-semibold text-white hover:text-primary py-3 px-2 transition-colors duration-300">
+                    Katalog Mobil
+                </a>
+                <a href="donasi-lain.html" class="font-semibold text-primary border-b-2 border-primary py-3 px-2 transition-colors duration-300">
+                    Donasi Lainnya
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-primary text-dark-bg overflow-hidden py-2 whitespace-nowrap">
+        <div class="marquee-text inline-block">
+            <span class="mx-8 font-semibold">SELAMAT DATANG DI KATALOG DONASI!</span>
+            <span class="mx-8">Setiap donasi sangat berarti untuk perkembangan server.</span>
+            <span class="mx-8">PROMO: Donasi paket VIP dapat bonus uang in-game!</span>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold text-center text-white mb-10 fade-in-up">Paket Donasi Lainnya</h2>
+        <div id="other-donations-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            
+            <div class="donation-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up">
+                <img src="https://placehold.co/600x400/172a46/00a8ff?text=VIP+GOLD" alt="Paket VIP" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">Paket VIP Gold</h3>
+                    <div class="text-slate-400 mt-2 text-sm h-24">
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Akses ke kendaraan eksklusif dengan harga jongkok</li>
+                            <li>Bonus uang in-game bulanan</li>
+                        </ul>
+                    </div>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="Paket VIP Gold"
+                        data-image="https://placehold.co/600x400/172a46/00a8ff?text=VIP+GOLD"
+                        data-info="Donasi untuk menjadi VIP Gold adalah Rp 250.000 per bulan. Keuntungan akan langsung aktif setelah donasi dikonfirmasi oleh admin.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+            
+            <div class="donation-card bg-card-bg rounded-lg overflow-hidden shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 fade-in-up" style="transition-delay: 100ms;">
+                <img src="https://placehold.co/600x400/1e2b3a/00a8ff?text=%241+Juta" alt="Paket Uang" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white">Paket Uang Tunai</h3>
+                     <p class="text-slate-400 mt-2 text-sm h-24">Tambahan modal untuk memulai bisnis atau membeli properti impian Anda di dalam game. Uang akan langsung ditransfer ke rekening bank karakter Anda.</p>
+                    <button class="donation-btn mt-4 w-full bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
+                        data-name="Paket Uang Tunai Rp.1,000,000"
+                        data-image="https://placehold.co/600x400/1e2b3a/00a8ff?text=%241+Juta"
+                        data-info="Dapatkan Rp.1,000,000 uang in-game dengan donasi sebesar Rp 50.000. Proses cepat via admin setelah bukti transfer dikirim.">
+                        Lihat Detail Donasi
+                    </button>
+                </div>
+            </div>
+
+            </div>
+    </main>
+    
+    <footer class="bg-card-bg mt-12 py-6">
+        <div class="container mx-auto text-center text-slate-400">
+            <p>&copy; 2025 ARUNISIA ROLEPLAY. Semua Hak Cipta Dilindungi.</p>
+            <p class="text-sm mt-1">Dibuat dengan ❤️ untuk komunitas.</p>
+        </div>
+    </footer>
+
+    <div id="donation-modal" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex justify-center items-center z-50 hidden transition-opacity duration-300">
+        <div id="modal-content" class="bg-card-bg rounded-lg shadow-glow max-w-lg w-full m-4 transform scale-95 transition-transform duration-300">
+            <div class="p-5 border-b border-slate-700 flex justify-between items-center">
+                <h2 id="modal-title" class="text-2xl font-bold text-primary">Detail Donasi</h2>
+                <button id="close-modal-btn" class="text-slate-400 hover:text-white text-2xl">&times;</button>
+            </div>
+            <div class="p-6">
+                <img id="modal-image" src="" alt="Gambar Donasi" class="w-full h-64 object-cover rounded-md mb-4">
+                <h3 id="modal-car-name" class="text-xl font-semibold text-white mb-2"></h3>
+                <p id="modal-info" class="text-slate-300"></p>
+                <a href="https://discord.gg/LINKDISCORDANDA" target="_blank" class="block w-full text-center mt-6 bg-primary text-dark-bg font-bold py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors">
+                    Hubungi Admin di Discord
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('donation-modal');
+            const modalContent = document.getElementById('modal-content');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const donationButtons = document.querySelectorAll('.donation-btn');
+            donationButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const itemName = button.dataset.name;
+                    const itemImage = button.dataset.image;
+                    const itemInfo = button.dataset.info;
+                    document.getElementById('modal-car-name').textContent = itemName;
+                    document.getElementById('modal-image').src = itemImage;
+                    document.getElementById('modal-info').textContent = itemInfo;
+                    modal.classList.remove('hidden');
+                    setTimeout(() => { modal.classList.add('opacity-100'); modalContent.classList.remove('scale-95'); modalContent.classList.add('scale-100'); }, 10);
+                });
+            });
+            const closeModal = () => {
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+                modal.classList.remove('opacity-100');
+                setTimeout(() => { modal.classList.add('hidden'); }, 300);
+            };
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (event) => { if (event.target === modal) { closeModal(); } });
+            const faders = document.querySelectorAll('.fade-in-up');
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+            }, { threshold: 0.2, rootMargin: "0px 0px -50px 0px" });
+            faders.forEach(fader => { appearOnScroll.observe(fader); });
+        });
+    </script>
+</body>
+</html>
